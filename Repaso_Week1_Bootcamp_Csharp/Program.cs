@@ -47,6 +47,7 @@ namespace Repaso_Week1_Bootcamp_Csharp
             int numComprobar;
             Console.WriteLine("===============================");
             Console.WriteLine("Ingresa el valor a comprobar");
+            Console.WriteLine("===============================");
             numComprobar = Convert.ToInt32(Console.ReadLine());
 
             if (numComprobar % 2 == 0)
@@ -57,7 +58,25 @@ namespace Repaso_Week1_Bootcamp_Csharp
             {
                 Console.WriteLine("El numero es IMPAR");
             }
+
+            //Comprobar si un numero es PAR o IMPAR
+            int primerNumero;
+            int segundoNumero;
+            int tercerNumero;
+            int numMayor;
+            Console.WriteLine("");
+            Console.WriteLine("===============================");
+            Console.WriteLine("Cuál es el número mayor de 3 números");
+            Console.WriteLine("===============================");
+            numMayor= Convert.ToInt32(Console.ReadLine());
+            segundoNumero = Convert.ToInt32(Console.ReadLine());
+            tercerNumero = Convert.ToInt32(Console.ReadLine());
+
+            // Escribir la lógica del programa
+
+
         }
 
     }
 }
+ 
