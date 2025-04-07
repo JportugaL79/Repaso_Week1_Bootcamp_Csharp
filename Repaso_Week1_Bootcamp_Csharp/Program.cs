@@ -12,7 +12,7 @@ namespace Repaso_Week1_Bootcamp_Csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("====================");
+            /*Console.WriteLine("====================");
             Console.WriteLine("DIAS DE LA SEMANA");
             String diaSemana = "Domingo";
 
@@ -42,9 +42,9 @@ namespace Repaso_Week1_Bootcamp_Csharp
             }
 
             Console.WriteLine("Saliendo de la Aplicación");
-            Console.WriteLine("====================");
+            Console.WriteLine("====================");*/
 
-            //Comprobar si un numero es PAR o IMPAR
+            //COMPROBAR SI UN  NUMERO ES PAR O IMPART
             /*int numComprobar;
             Console.WriteLine("===============================");
             Console.WriteLine("Ingresa el valor a comprobar");
@@ -60,7 +60,7 @@ namespace Repaso_Week1_Bootcamp_Csharp
                 Console.WriteLine("El numero es IMPAR");
             }*/
 
-            //Cuál es el número mayor de 3 números
+            //CUAL ES EL NUMERO MAYOR DE 3 NUMEROS
             int primerNumero;
             int segundoNumero;
             int tercerNumero;
@@ -95,38 +95,39 @@ namespace Repaso_Week1_Bootcamp_Csharp
                 Console.WriteLine("El número mayor es el 3er ");
             }
 
-                // Obtener área del Circulo y Rectangulo
-                String primerArea;
+            // OBTENER AREA DEL CIRCULO Y RECTANGULO
+            int opcionArea;
             double Pi = 3.14;
             double radioCirculo;
-            double areaCirculo;
             double basee;
             double altura;
-            double areaRectangulo;
+            double area;
             Console.WriteLine("");
             Console.WriteLine("===============================");
             Console.WriteLine("Calculando Areas");
             Console.WriteLine("===============================");
             Console.WriteLine("");
-            Console.WriteLine("Ingrese el área a trabajar");
-            primerArea = Console.ReadLine();
-            //segundoArea = Convert.ToInt32(Console.ReadLine());
-            //tercerNumero = Convert.ToInt32(Console.ReadLine());
-            switch (primerArea)
+            Console.WriteLine("1.- Area del Círculo");
+            Console.WriteLine("1.- Area del Réctangiulo");
+            opcionArea = Convert.ToInt32(Console.ReadLine());
+            switch (opcionArea)
             {
-                case "1": //Círculo
+                case 1: //Círculo
                     Console.WriteLine("Ingrese rádio del Círculo");
                     radioCirculo = Convert.ToInt32(Console.ReadLine());
-                    areaCirculo = radioCirculo * Pi;
-                    Console.WriteLine("El área del Círculo es: " + areaCirculo);
+                    area = Pi * radioCirculo * radioCirculo;
+                    Console.WriteLine("El área del Círculo es: " + area);
                     break;
-                default: //"Réctangulo":
+                case 2: //"Réctangulo":
                     Console.WriteLine("Ingrese Base del Réctangulo");
                     basee = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Ingrese Altura del Réctangulo");
                     altura = Convert.ToInt32(Console.ReadLine());
-                    areaRectangulo = basee * altura;
-                    Console.WriteLine("El área del Réctangulo es: " + areaRectangulo);
+                    area = basee * altura;
+                    Console.WriteLine("El área del Réctangulo es: " + area);
+                    break;
+                default: //"Réctangulo":
+                    Console.WriteLine("No es una opción acéptable");
                     break;
             }
 
